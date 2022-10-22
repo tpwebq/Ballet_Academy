@@ -1,13 +1,56 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
-
+@media all and (max-width: 991px), all and (orientation:portrait){
+    @include aoa-bg-series($img__classes--v,$img__aoa--v,0,"center","cover","scroll");   
+    .academy{
+        &-s1{
+            background-position-y: 60%!important;
+            background-blend-mode: overlay;
+            background-color: #bbb;
+        }
+        &-s2{
+            background-position-y: 70%!important;
+            background-blend-mode: overlay;
+            background-color: #bbb;
+        }
+    }
+    .contact{
+        &-s2{            
+            background-blend-mode: overlay;
+            background-color: #ccc!important;
+        }
+    }
+}
+*{
+    font-family: "Nunito";
+}
+.bg{
+    &-violet{
+        background-color: $color__violet--dark!important;
+    }
+}
+.border{
+    &-violet{
+        border-color: $color__violet--dark!important;
+    }
+}
 .comingsoon{
     &-s1{
         background-position-x: 15%!important;
     }
 }
+.dance{
+    &-s1{
+        background-position-y: bottom!important;
+    }
+}
 .error{
     &-s1{
         background-position-x: 70%!important;
+    }
+}
+.info{
+    &-s1{
+        background-position-y: 80%!important;
     }
 }
 .navbar{
